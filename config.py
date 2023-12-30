@@ -21,12 +21,12 @@ OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/DAXXSIR/DAXXMUSIC")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/DAXXSIR/avaxmusicbot")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Cyberdaxx")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Cyberdaxxx")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/statusdairy2")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/voiceofheart0")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/8464871169800fa685793.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/98310e1de5bca66b4f9d9.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/bee273f2f86fc446a30c2.jpg",
+    "https://telegra.ph/file/474fe706b37d7349b8120.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/bee273f2f86fc446a30c2.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/474fe706b37d7349b8120.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/8464871169800fa685793.jpg"
+            START_IMG_URL = "https://telegra.ph/file/bee273f2f86fc446a30c2.jpg"
